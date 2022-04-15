@@ -1,0 +1,248 @@
+.result-block__radios {
+  margin-bottom: 20px;
+  button {
+    padding: 10px 20px;
+    background-color: #eee;
+    border: none;
+
+    &:not(:disabled):hover {
+      cursor: pointer;
+    }
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    &.active {
+      border-bottom: 2px solid #888;
+    }
+  }
+}
+
+.result-block__accessories {
+  margin: 0 0 30px;
+
+  i {
+    display: block;
+    max-width: 600px;
+    font-size: 13px;
+    line-height: 18px;
+    color: red;
+  }
+}
+
+.result-block__refnets {
+  margin: 0 0 15px;
+
+  label {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.result-block__controllers {
+  margin: 0 0 15px;
+
+  label {
+    display: block;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.result-block__controllers-title {
+  margin: 0 0 10px;
+  font-weight: bold;
+}
+
+.result-info,
+.result-total-info {
+  .save-button {
+    margin: 0 0 20px;
+    padding: 15px 30px;
+    border: none;
+    background-color: $blue;
+    color: #fff;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.result-info {
+  i {
+    display: block;
+    margin: 0 0 25px;
+    max-width: 500px;
+    font-size: 13px;
+    line-height: 18px;
+    color: red;
+  }
+}
+
+.result,
+.result-total {
+  table {
+    border-collapse: collapse;
+
+    td {
+      border: 1px solid #555;
+    }
+
+    p {
+      min-width: 50px;
+      margin: 0;
+      padding: 3px 10px;
+      font-size: 13px;
+      line-height: 15px;
+    }
+  }
+}
+
+.result table tr:first-child td:nth-child(5) {
+  position: relative;
+
+  &::after {
+    content: "Введите кол-во систем";
+    position: absolute;
+    bottom: calc(100% + 5px);
+    left: 0;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: $text-main;
+  }
+}
+
+.result table input {
+  background-color: $grey200;
+}
+
+.result-ppd {
+  .save-button {
+    display: block;
+    margin: 0 0 20px;
+    padding: 15px 30px;
+    border: none;
+    background-color: $blue;
+    color: #fff;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .save-button-light {
+    display: inline-block;
+    margin: 0 0 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #fff;
+    color: $blue;
+    border: 2px solid $blue;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  button#make-ppd-group {
+    display: block;
+    font-weight: bold;
+  }
+}
+
+.result-ppd__options {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 50px;
+  align-items: flex-start;
+
+  label {
+    display: inline-block;
+    padding-right: 16px;
+    padding-left: 5px;
+
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+
+    &.group {
+      border-left: 1px solid #999;
+    }
+
+    &.group-first {
+      border-top: 1px solid #999;
+    }
+
+    &.group-last {
+      border-bottom: 1px solid #999;
+    }
+  }
+}
+
+.result-ppd {
+  table {
+    border-collapse: collapse;
+
+    td {
+      border: 1px solid #555;
+    }
+
+    p {
+      min-width: 50px;
+      margin: 0;
+      padding: 3px 10px;
+      font-size: 13px;
+      line-height: 15px;
+    }
+  }
+}
+
+.result-ppd__title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 600;
+  margin: 0 0 20px;
+}
+
+.result-ppd__sub-title {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 600;
+  margin: 0 0 20px;
+  color: red;
+  max-width: 1000px;
+}
+
+.result-ppd__messages {
+  margin: 0 0 20px;
+
+  div {
+    max-width: 700px;
+    margin: 0 0 10px;
+    font-size: 13px;
+    line-height: 18px;
+    color: red;
+    font-weight: bold;
+    font-style: italic;
+  }
+}
+
+.mouse-img {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-image: url("../img/mouse-left-click.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+}
